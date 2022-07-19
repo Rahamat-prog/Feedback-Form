@@ -6,17 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback form</title>
+    <link rel="stylesheet" href="style.css">
 
     
    
 </head>
 <body>
-
- 
-
-   
-
-    <form action = "/action.php">
+    
+   <form action = "/action.php">
         <div>
             <h1>Feedback form</h1>
         </div>
@@ -31,7 +28,7 @@
     </div>
 
 
-    <div>
+    <div class="radio-item" >
         <label for="good">
             <input type="radio" name="rate" id="good">Good:
             
@@ -51,26 +48,19 @@
     <br><br>
 
 
-    <div>
-        <label for="full name">
-            Full name:<input type="text" name="my name" id="full name">
-        </label>
+    <div class="filter">
+    <label for="full name">Full name*</label>
+        <input type="text" placeholder="Rahamat shaikh" id="full name">   
 
-        <label for="email id">
-            Email Id:<input type="email" name="my Email Id" id="email id">
-            <br><br>
-        </label>
-        
-        
-        <label for="age">
-            Age:<input type="text" name="my Age" id="age">
-            
-        </label>
-      
-        
-        <label for="phone no">
-          Phone no:<input type="number" name="my phone no" id="phone no">
-        </label>
+    <label for="email id">Email Id*</label>
+         <input type="email" placeholder="rahamatshaikh216@gmail.com"id="email id">
+     <br><br>       
+   <label for="age">Age*  </label>
+         <input type="text" placeholder="23" id="age">
+
+    <label for="phone no"> Phone no* </label>
+         <input type="number" placeholder="7687875449" id="phone no"> 
+       
     </div>
         <br><br>
 
@@ -80,7 +70,7 @@
         <div>
 
             Message<br>
-            <textarea name="my text" rows="5" cols="50" placeholder="write your message here"></textarea> 
+            <textarea name="my text" placeholder="write your message here"  rows="5" cols="50" ></textarea> 
         </div>
 
         
@@ -89,14 +79,6 @@
            <input type="submit" value="Submit now ">
        </div>
 
-
-
-        
-
-    </form> 
-
-
-  
-    
+</form> 
 </body>
 </html>
